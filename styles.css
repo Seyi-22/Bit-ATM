@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.logoText{
+  color: rgba(9, 9, 104, 0.616);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 12px;
+}
+
+#welcome-container{
+  background-image: url(image/istockphoto-1603134915-170667a.webp);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  
+ }
+ .overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(94, 94, 136, 0.616);
+ }
+
+ #welcome-container h4 {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#welcome-container p {
+  color: red;
+  font-size: 20px;
+  margin-top: 130px;
+ }
+
+ #main {
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+   display: none;
+ } 
+ .overlay1 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(133, 133, 165, 0.616);
+ }
+ #main h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  text-align: center;
+ }
+ #main button{
+  background-color: rgb(47, 47, 117);
+  width: 150px;
+  height: 50px;
+ }
+
+ #withdrawal{
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+   display: none;
+ }
+ #withdrawal h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+ }
+ #withdrawal button{
+  width: 150px;
+  background-color: rgb(53, 53, 138);
+  height: 50px;
+ }
+
+ #savings {
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  display: none;
+ }
+ #savings h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
+ }
+ #savings p {
+  color: rgb(224, 5, 5);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+ }
+ #savings button{
+  width: 150px;
+  background-color: rgb(53, 53, 138);
+  height: 50px;
+ }
+
+ #inquiry-text{
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  display: none; 
+ }
+
+ .text-screen {
+   margin-top: 200px;
+  width: 250px;
+  height: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ } 
+
+
+ #transfer {
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  display: none;
+}
+
+#transfer button{
+  background-color: grey;
+  width: 70px;
+}
+
+#text-container{
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  display: none;
+}
+#text-container h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+
+
+#withdraw-amount  {
+  margin-top: 100px
+}
+
+.logo {
+  margin-top: 10px;
+  text-align: left;
+}  
+
+button :hover{
+  cursor: auto;
+  color: rgb(117, 94, 94);
+}
+
+#other-container {
+  background-image: url(image/istockphoto-1409591964-612x612.jpg);
+  background-size: cover;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  display: none;
+
+}
+

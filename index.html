@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="styles.css">
+  <title>Bit ATM</title>
+</head>
+<body>
+  <div id="welcome-container">
+    <div class="overlay">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+        <div class="atm-screen">
+          <div class="welcome-screen">
+            <h4 class="text-center">ENTER YOUR UNIQUE PIN TO PROCESS TRANSACTION</h4>
+          </div>
+          <div class="flex-grow-1">
+            <div class="row">
+              <div class="col-12 text-right">    
+               <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#pinModal">
+                Generate PIN
+               </button>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="emailInput">Enter Email:</label>
+                <input type="text" class="form-control" id="emailInput" placeholder="Enter Email here">
+                <label for="pinInput">Enter PIN:</label>
+                <input type="text" class="form-control" id="pinInput" placeholder="Enter PIN here">
+              </div>
+              <span id="errorDisplay"> </span>
+            </div>
+          </div>
+          <div class="modal fade" id="pinModal" tabindex="1" aria-labelledby="pinModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pinModalLabel"> Generate Unique Pin</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="pinForm">
+                    <div class="form-group">
+                      <label for="nameInput"> Full Name</label>
+                      <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Full">
+                      <label for="emailInput">Email</label>
+                      <input type="text" class="form-control" id="userEmail" placeholder="Enter Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Generate Pin</button>
+                    <span id="pinDisplay" class="mt-2 d-block"></span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <P class="text-left ">Please guard your pin, ensure no one is watching</P>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="overlay1">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+      <div class="atm-screen">
+        <div class="welcome-screen">
+          <h1>Select Transaction</h1>
+        </div>
+        <div class="row col-12">
+          <div id="Statement-btn" class="col-md-6 mb-5 mt-5"><button class="btn btn-secondary menu-btn"> Statement</button></div>
+          <div id="withdrawal-btn" class="col-md-6 mb-5 mt-5"><button class="btn btn-secondary menu-btn"> Withdrawal</button></div>
+          <div id="change-pin " class="col-md-6 mb-5"><button class="btn btn-secondary menu-btn"> Change Pin</button></div>
+          <div id="inquiry-btn" class="col-md-6 mb-5"><button class="btn btn-secondary menu-btn"> Inquiry</button></div>
+          <div id="quickteller-btn" class="col-md-6 mb-5"><button class="btn btn-secondary menu-btn"> Quickteller</button></div>
+          <div id="transfer-btn" class="col-md-6 mb-5"><button class="btn btn-secondary menu-btn"> transfer</button></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="withdrawal">
+    <div class="overlay1">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio></nav>
+      </nav><h4 class="text-left logoText">Bit Bank</h4>
+      <div class="atm-screen">
+        <div  class="welcome-screen">
+          <h3>Select the withdrawal Account</h3>
+        </div>
+        <div class="row col-12 text-right">
+          <div id="current-btn" class="col-md-12 mb-5 mt-5"><button class="btn btn-secondary menu-btn"> Current</button></div>
+          <div id="savings-btn" class="col-md-12 mb-5"><button class="btn btn-secondary menu-btn"> Savings</button></div>
+          <div id="credit-btn" class="col-md-12 mb-5"><button class="btn btn-secondary menu-btn"> Credit</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="savings">
+    <div class="overlay1">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio></nav>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+      <div class="atm-screen">
+        <div class="welcome-screen">
+          <h3>Select the amount</h3>
+          <p >press "Cancel" to Terminate Transaction </p>
+        </div>
+        <div class="row col-12">
+          <div class="col-md-6 mb-4 mt-5 "><button  class="btn btn-secondary menu-btn" value="500"> ₦500</button></div>
+          <div class="col-md-6 mb-4 mt-5"><button class="btn btn-secondary menu-btn" value="15000"> ₦15000</button></div>
+          <div class="col-md-6 mb-4"><button class="btn btn-secondary menu-btn" value="1000"> ₦1000</button></div>
+          <div class="col-md-6 mb-4"><button class="btn btn-secondary menu-btn" value="20000">₦20000 </button></div>
+          <div class="col-md-6 mb-4"><button class="btn btn-secondary menu-btn" value="5000"> ₦5000</button></div>
+          <div class="col-md-6 mb-4"><button class="btn btn-secondary menu-btn" value="40000"> ₦40000</button></div>
+          <div id="Cancel-btn" class="col-md-6 mb-4"><button class="btn btn-secondary menu-btn"> Cancel</button></div> 
+          <div id="other-btn" class="col-md-6 mb-4"><button class="btn btn-secondary menu-btn"> others</button></div>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="other-container">
+    <div class="overlay">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio></nav>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+      <div>
+        <input type="text" id="other-amount" placeholder="Enter amount">
+        <button id="enter" class="btn btn-secondary">Enter</button>
+        <div id="Cancel-button" class="col-md-12 mt-5"><button class="btn btn-secondary menu-btn"> Cancel</button></div> 
+    </div>
+    </div>
+  </div>
+
+  <div id="inquiry-text">
+    <div class="overlay1">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio></nav>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+        <div class="welcome-screen">
+          <h2 id="text-screen"></h2>
+          <div id="Cancel" class="col-md-12 mt-5"><button class="btn btn-secondary menu-btn"> Cancel</button></div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="text-container">
+    <div class="overlay1">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio></nav>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+       <div id="atm-screen">
+        <div class="welcome-screen">
+          <span id="withdraw-amount"></span>
+          <div id="Cancel-but" class="col-md-12 mt-5"><button class="btn btn-secondary menu-btn"> Cancel</button></div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="transfer">
+    <div class="overlay1">
+      <nav class="navbar"><img src="image/download.png" alt="logo" width="90" class="logo img-fluid">
+        <audio autoplay src="audio/3374-2937-4e2a-b175-e4eff736c00c.mp3" type="audio/mp3" ></audio>
+      </nav><h3 class="text-left logoText">Bit Bank</h3>
+      <div class="atm-screen ">
+        <div  class="welcome-screen">
+          <input type="email" id="recipientEmail" placeholder="Recipient Email">
+          <input type="text" id="transferAmount" placeholder="Amount">
+          <button id="transferSubmit">Send</button>
+          <div id="transfer-status"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script src="script.js"></script>
+  
+</body>
+</html>
